@@ -1,0 +1,293 @@
+.hero {
+    display: flex;
+    align-items: center;
+    min-height: 400px;
+    overflow: hidden;
+    background-color: var(--color-secundario);
+}
+
+.hero-imagen {
+    flex: 1 1 55%;
+    min-width: 0;
+    height: 400px;
+}
+
+.hero-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-contenido {
+    flex: 1 1 45%;
+    padding: 42px;
+}
+
+.hero-contenido h1 {
+    color: var(--color-principal);
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    margin-bottom: 16px;
+}
+
+.hero-contenido p {
+    margin-bottom: 24px;
+}
+
+
+.encabezado-pagina {
+    padding: 36px 0 10px;
+}
+
+.coleccion-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 28px;
+}
+
+.filtros {
+    flex: 0 0 190px;
+    padding: 20px;
+    background-color: var(--color-blanco);
+    border-radius: var(--radio-borde);
+}
+
+.filtros h2 {
+    font-size: 1.1rem;
+    color: var(--color-principal);
+    margin-bottom: 12px;
+}
+
+.filtros li {
+    margin: 10px 0;
+}
+
+.filtros a:hover {
+    color: var(--color-rosa);
+}
+
+.coleccion-contenido {
+    flex: 1;
+    min-width: 0;
+}
+
+.coleccion-contenido .catalogo {
+    justify-content: flex-start;
+}
+
+
+.detalle-producto {
+    display: flex;
+    align-items: flex-start;
+    gap: 38px;
+    padding: 42px;
+    background-color: var(--color-blanco);
+    border-radius: var(--radio-borde);
+    box-shadow: var(--sombra-suave);
+}
+
+.detalle-galeria {
+    flex: 1 1 50%;
+    min-width: 0;
+}
+
+.detalle-imagen-principal {
+    height: 390px;
+    padding: 20px;
+    background-color: #FFF9F6;
+    border-radius: var(--radio-borde);
+}
+
+.detalle-imagen-principal img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.detalle-miniaturas {
+    display: flex;
+    gap: 12px;
+    margin-top: 14px;
+}
+
+.detalle-miniaturas img {
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+    padding: 5px;
+    border: 1px solid var(--color-borde);
+    border-radius: 7px;
+}
+
+.detalle-informacion {
+    flex: 1 1 50%;
+    min-width: 0;
+}
+
+.detalle-informacion h1 {
+    color: var(--color-principal);
+    font-size: clamp(1.6rem, 3vw, 2.3rem);
+    margin-bottom: 10px;
+}
+
+.detalle-precio {
+    color: var(--color-principal);
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin: 18px 0;
+}
+
+.detalle-etiqueta {
+    font-weight: 700;
+    margin: 18px 0 8px;
+}
+
+.tonos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tono {
+    padding: 8px 14px;
+    border: 1px solid var(--color-borde);
+    border-radius: 20px;
+    background-color: var(--color-blanco);
+}
+
+.tono:hover {
+    border-color: var(--color-principal);
+}
+
+.detalle-informacion .boton {
+    margin-top: 20px;
+}
+
+
+@media (max-width: 900px) {
+    .header-contenido {
+        justify-content: center;
+        padding: 16px 0;
+    }
+
+    .hero-contenido {
+        padding: 28px;
+    }
+
+    .coleccion-layout {
+        flex-direction: column;
+    }
+
+    .filtros {
+        flex-basis: auto;
+        width: 100%;
+    }
+
+    .filtros ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+    }
+
+    .detalle-producto {
+        gap: 24px;
+        padding: 24px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .seccion {
+        padding: 36px 0;
+    }
+
+    .header-contenido {
+        gap: 12px;
+    }
+
+    .navegacion {
+        gap: 12px;
+    }
+
+    .navegacion a {
+        font-size: 0.85rem;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-imagen {
+        flex: auto;
+        width: 100%;
+        height: 240px;
+    }
+
+    .hero-contenido {
+        width: 100%;
+        padding: 28px 20px;
+        text-align: center;
+    }
+
+    .catalogo {
+        gap: 14px;
+    }
+
+    .tarjeta-producto {
+        flex: 1 1 145px;
+        max-width: calc(50% - 7px);
+    }
+
+    .producto-imagen {
+        height: 155px;
+        padding: 8px;
+    }
+
+    .producto-informacion {
+        padding: 12px;
+    }
+
+    .producto-informacion h3 {
+        font-size: 0.9rem;
+    }
+
+    .producto-precio {
+        font-size: 1rem;
+    }
+
+    .producto-informacion .boton {
+        padding: 10px 6px;
+        font-size: 0.8rem;
+    }
+
+    .detalle-producto {
+        flex-direction: column;
+        padding: 18px;
+    }
+
+    .detalle-galeria,
+    .detalle-informacion {
+        width: 100%;
+    }
+
+    .detalle-imagen-principal {
+        height: 280px;
+    }
+
+    .detalle-miniaturas img {
+        width: 58px;
+        height: 58px;
+    }
+
+    .formulario {
+        padding: 20px;
+    }
+
+    .footer-contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-enlaces {
+        justify-content: center;
+    }
+}
