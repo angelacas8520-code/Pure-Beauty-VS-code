@@ -1,119 +1,100 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Conoce el labial mate rojo de Pure Beauty.">
-    <title>Pure Beauty | Labial Mate Rojo</title>
-
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/componentes.css">
-    <link rel="stylesheet" href="css/paginas.css">
-    <link rel="icon" type="image/png" href="img/logo.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pure Beauty - Descripción Labial Mate</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/componente.css">
+  <link rel="stylesheet" href="css/paginas.css">
 </head>
 <body>
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo-area">
+        <img src="img/logo.png" alt="Logo Pure Beauty" class="logo-img">
+      </a>
 
-    <header class="header">
-        <div class="container header-contenido">
-            <a href="index.html" class="logo">Pure <span>Beauty</span></a>
+      <div class="nav-and-actions">
+        <div class="top-nav-row">
+          <nav>
+            <ul class="nav-links">
+              <li><a href="index.html" class="nav-link">Inicio</a></li>
+              <li><a href="coleccion.html" class="nav-link active">Productos</a></li>
+              <li><a href="coleccion.html" class="nav-link">Novedades</a></li>
+            </ul>
+          </nav>
 
-            <nav class="navegacion" aria-label="Navegación principal">
-                <a href="index.html">Inicio</a>
-                <a href="coleccion.html" class="activo">Productos</a>
-                <a href="index.html#ofertas">Ofertas</a>
-                <a href="index.html#contacto">Contacto</a>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-        <section class="seccion">
-            <div class="container">
-                <p style="margin-bottom: 20px;">
-                    <a href="index.html">Inicio</a> /
-                    <a href="coleccion.html">Productos</a> /
-                    Labial Mate Rojo
-                </p>
-
-                <article class="detalle-producto">
-
-                    
-                    <div class="detalle-galeria">
-                        <div class="detalle-imagen-principal">
-                            <img src="img/labial.png"
-                                 alt="Labial Mate Rojo de Pure Beauty">
-                        </div>
-
-                        <div class="detalle-miniaturas">
-                            <img src="img/labios.png"
-                                 alt="Vista del labial rojo">
-                            <img src="img/muestra.png"
-                                 alt="Otra vista del labial">
-                        </div>
-                    </div>
-
-                   
-                    <div class="detalle-informacion">
-                        <p class="producto-descripcion">PURE BEAUTY</p>
-
-                        <h1>Labial Mate Rojo</h1>
-
-                        <p class="estrellas">★★★★★
-                            <span style="color: var(--color-gris);">
-                                (4.8)
-                            </span>
-                        </p>
-
-                        <p class="detalle-precio">$25.000 COP</p>
-
-                        <p>
-                            Realza tu maquillaje con un tono rojo intenso
-                            y un acabado mate, ideal para complementar
-                            diferentes estilos.
-                        </p>
-
-                        <p class="detalle-etiqueta">Acabado</p>
-                        <p>Mate</p>
-
-                        <p class="detalle-etiqueta">Tono disponible</p>
-                        <div class="tonos">
-                            <span class="tono">Rojo clásico</span>
-                        </div>
-
-                        <p class="detalle-etiqueta">Cantidad</p>
-                        <p>1 unidad</p>
-
-                        <button type="button" class="boton">
-                            Agregar al carrito
-                        </button>
-                    </div>
-
-                </article>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container footer-contenido">
-            <div>
-                <h2>Pure Beauty</h2>
-                <p>Realza tu belleza pura.</p>
+          <div class="search-cart-area">
+            <div class="search-box">
+              <input type="text" class="search-input" placeholder="Buscar productos..." aria-label="Buscar productos">
+              <button class="search-btn" type="button" aria-label="Buscar">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              </button>
             </div>
 
-            <nav class="footer-enlaces" aria-label="Enlaces del pie de página">
-                <a href="index.html">Inicio</a>
-                <a href="coleccion.html">Productos</a>
-                <a href="index.html#contacto">Contacto</a>
-            </nav>
-
-            <p>Instagram: @purebeauty_col</p>
-
-            <p class="footer-copy">
-                © 2026 Pure Beauty. Todos los derechos reservados.
-            </p>
+            <a href="#" class="cart-icon" aria-label="Carrito de compras" onclick="alert('Carrito vacío'); return false;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+            </a>
+          </div>
         </div>
-    </footer>
 
+        <div class="nav-divider"></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+   
+    <div class="back-link-container">
+      <a href="coleccion.html" class="back-link">
+        ← Volver a Productos
+      </a>
+    </div>
+
+    <section class="product-detail-card">
+      <div class="gallery-container">
+        <div class="thumbnails-col">
+          <img src="img/labial.png" alt="Miniatura 1" class="thumb-img">
+          <img src="img/labios.png" alt="Miniatura 2" class="thumb-img">
+          <img src="img/muestra.png" alt="Miniatura 3" class="thumb-img">
+          <img src="img/labial.png" alt="Miniatura 4" class="thumb-img">
+        </div>
+        <div class="main-img-box">
+          <img src="img/labial.png" alt="Labial Matte Rojo">
+        </div>
+      </div>
+
+      <div class="product-detail-info">
+        <h1 class="detail-title">Labial Matte Rojo</h1>
+        <div class="rating-stars">★★★★★ <span style="color:#888; font-size:0.75rem;">(12)</span></div>
+        <div class="detail-price">$25.000</div>
+        <p class="detail-description">
+          Labial de acabado mate con alta pigmentación y larga duración. Su fórmula ligera brinda un color intenso y cómodo durante todo el día.
+        </p>
+
+        <form>
+          <label for="cantidad" style="display:block; font-size:0.8rem; margin-bottom:5px; font-weight:600;">Cantidad:</label>
+          <div class="quantity-control">
+            <button type="button" class="qty-btn">-</button>
+            <input type="text" id="cantidad" name="cantidad" value="1" class="qty-input" aria-label="Cantidad seleccionada">
+            <button type="button" class="qty-btn">+</button>
+          </div>
+          
+          
+          <div class="detail-actions-group">
+            <button type="submit" class="btn btn-magenta">AGREGAR AL CARRITO</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <span class="logo-text">PURE BEAUTY</span>
+      <p class="footer-text">&copy; 2026 Pure Beauty. Todos los derechos reservados.</p>
+    </div>
+  </footer>
 </body>
 </html>
