@@ -229,3 +229,68 @@
   font-size: 0.85rem;
   color: var(--text-muted);
 }
+
+/* DISEÑO RESPONSIVE PARA CELULARES */
+@media (max-width: 600px) {
+
+  .header {
+    padding: 10px;
+  }
+
+  .header-container {
+    flex-direction: column !important;
+    gap: 12px;
+  }
+
+  .logo-img {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .nav-and-actions {
+    width: 100%;
+  }
+
+  .top-nav-row {
+    flex-direction: column !important;
+    gap: 12px;
+  }
+
+  .nav-links {
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .search-cart-area {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .search-box {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .footer {
+    padding: 20px 15px;
+    margin-top: 30px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .footer-text {
+    font-size: 0.8rem;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}

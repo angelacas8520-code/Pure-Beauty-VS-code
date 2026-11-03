@@ -55,6 +55,43 @@
         <a href="coleccion.html" class="btn btn-magenta">PÁGINA DE INICIO →</a>
       </div>
     </section>
+
+        <section class="login-section">
+
+      <h2>Iniciar sesión</h2>
+
+      <form id="formulario-login">
+
+        <div class="form-group">
+          <label for="correo">Correo electrónico</label>
+          <input
+            type="email"
+            id="correo"
+            placeholder="Ingresa tu correo"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="contrasena">Contraseña</label>
+          <input
+            type="password"
+            id="contrasena"
+            placeholder="Ingresa tu contraseña"
+            required
+          >
+        </div>
+
+        <button type="submit" class="btn btn-magenta">
+          Iniciar sesión
+        </button>
+
+        <p id="mensaje-login"></p>
+
+      </form>
+
+    </section>
+
   </main>
 
   <footer class="footer">
@@ -63,5 +100,8 @@
       <p class="footer-text">&copy; 2026 Pure Beauty. Todos los derechos reservados.</p>
     </div>
   </footer>
+
+  <script src="js/login.js"></script>
+  
 </body>
 </html>

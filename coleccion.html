@@ -12,8 +12,8 @@
   <header class="header">
     <div class="container header-container">
       <a href="index.html" class="logo-area">
-        <img src="img/logo.png" alt="Logo Pure Beauty" class="logo-img">
-      </a>
+    <img src="./img/logo.png" alt="Logo Pure Beauty" width="100">
+</a>
 
       <div class="nav-and-actions">
         <div class="top-nav-row">
@@ -33,11 +33,17 @@
               </button>
             </div>
 
-            <a href="#" class="cart-icon" aria-label="Carrito de compras" onclick="alert('Carrito vacío'); return false;">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
-            </a>
-          </div>
-        </div>
+            <a href="#resumen-carrito" id="contador-carrito">Carrito (0)</a>
+
+<div id="resumen-carrito">
+    <h3>Mi carrito</h3>
+
+    <div id="lista-carrito">
+        <p>Tu carrito está vacío.</p>
+    </div>
+
+    <p id="total-carrito">Total: $0</p>
+</div>
 
         <div class="nav-divider"></div>
       </div>
@@ -48,61 +54,49 @@
     <h1 class="catalog-title">NUEVOS PRODUCTOS</h1>
 
     <div class="catalog-layout">
-      <aside class="sidebar-categories">
+
+    <aside class="sidebar-categories">
         <h3>Categorías</h3>
         <ul class="category-list">
-          <li><a href="#" class="active">Labios</a></li>
-          <li><a href="#">Rostro</a></li>
-          <li><a href="#">Cejas</a></li>
-          <li><a href="#">Pestañas</a></li>
-          <li><a href="#">Ojos</a></li>
-          <li><a href="#">Accesorios</a></li>
-          <li><a href="#">Brochas</a></li>
+            <li><a href="#" class="active">Labios</a></li>
+            <li><a href="#">Rostro</a></li>
+            <li><a href="#">Cejas</a></li>
+            <li><a href="#">Pestañas</a></li>
+            <li><a href="#">Ojos</a></li>
+            <li><a href="#">Accesorios</a></li>
+            <li><a href="#">Brochas</a></li>
         </ul>
-      </aside>
-      
-      <section class="catalog-grid">
-        <article class="product-card">
-          <span class="wishlist-heart">♡</span>
-          <a href="producto.html" class="product-card-img-box">
-            <img src="img/labial.png" alt="Labial Mate Rojo">
-          </a>
-          <h2 class="product-card-title"><a href="producto.html">Labial Mate Rojo</a></h2>
-          <span class="product-card-price">$25.000</span>
-          <a href="producto.html" class="btn btn-magenta">Ver descripción</a>
-        </article>
+    </aside>
 
-        <article class="product-card">
-          <span class="wishlist-heart">♡</span>
-          <div class="product-card-img-box">
-            <img src="img/base.png" alt="Base Líquida Natural">
-          </div>
-          <h2 class="product-card-title">Base Líquida Natural</h2>
-          <span class="product-card-price">$45.000</span>
-          <a href="#" class="btn btn-magenta">Agregar al carrito</a>
-        </article>
+    <div class="catalog-content">
 
-        <article class="product-card">
-          <span class="wishlist-heart">♡</span>
-          <div class="product-card-img-box">
-            <img src="img/sombra.png" alt="Paleta de Sombras">
-          </div>
-          <h2 class="product-card-title">Paleta de Sombras</h2>
-          <span class="product-card-price">$55.000</span>
-          <a href="#" class="btn btn-magenta">Agregar al carrito</a>
-        </article>
+        <div class="catalog-filters">
+            <label for="filtro-talla">Filtrar por talla:</label>
+            <select id="filtro-talla">
+                <option value="">Todas las tallas</option>
+                <option value="Única">Única</option>
+            </select>
 
-        <article class="product-card">
-          <span class="wishlist-heart">♡</span>
-          <div class="product-card-img-box">
-            <img src="img/brocha.png" alt="Brocha para Polvo">
-          </div>
-          <h2 class="product-card-title">Brocha para Polvo</h2>
-          <span class="product-card-price">$18.000</span>
-          <a href="#" class="btn btn-magenta">Agregar al carrito</a>
-        </article>
-      </section>
+            <label for="filtro-color">Filtrar por color:</label>
+            <select id="filtro-color">
+                <option value="">Todos los colores</option>
+                <option value="Rojo">Rojo</option>
+                <option value="Beige">Beige</option>
+                <option value="Marrón">Marrón</option>
+                <option value="Negro">Negro</option>
+            </select>
+
+            <button type="button" id="limpiar-filtros">
+                Limpiar filtros
+            </button>
+        </div>
+
+        <section class="catalog-grid" id="contenedor-productos">
+        </section>
+
     </div>
+
+</div>
   </main>
 
   <footer class="footer">
@@ -111,5 +105,6 @@
       <p class="footer-text">&copy; 2026 Pure Beauty. Todos los derechos reservados.</p>
     </div>
   </footer>
+  <script src="js/producto.js"></script>
 </body>
 </html>

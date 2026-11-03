@@ -75,11 +75,14 @@
 
         <form>
           <label for="cantidad" style="display:block; font-size:0.8rem; margin-bottom:5px; font-weight:600;">Cantidad:</label>
-          <div class="quantity-control">
-            <button type="button" class="qty-btn">-</button>
-            <input type="text" id="cantidad" name="cantidad" value="1" class="qty-input" aria-label="Cantidad seleccionada">
-            <button type="button" class="qty-btn">+</button>
-          </div>
+
+         <div class="quantity-control">
+          <button type="button" class="qty-btn" id="restar">-</button>
+          <input type="number" id="cantidad" name="cantidad"
+          value="1" min="1" class="qty-input"
+         aria-label="Cantidad seleccionada">
+         <button type="button" class="qty-btn" id="sumar">+</button>
+        </div>
           
           
           <div class="detail-actions-group">
@@ -96,5 +99,8 @@
       <p class="footer-text">&copy; 2026 Pure Beauty. Todos los derechos reservados.</p>
     </div>
   </footer>
+
+  <script src="js/detalle.js"></script>
+  
 </body>
 </html>
